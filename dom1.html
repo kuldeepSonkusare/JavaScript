@@ -76,6 +76,20 @@
         date: '6 December 1988'
       },
     ];
+    /*
+    //with concatenation
+    function createCards() {
+  let cardsHTML = '';
+  for (let i = 0; i < cardData.length; i++) {
+    cardsHTML += '<div class="card">' +
+      '<img src="' + cardData[i].image + '" alt="Card Image">' +
+      '<h2>' + cardData[i].name + '</h2>' +
+      '<p>' + cardData[i].date + '</p>' +
+      '</div>';
+  }
+    */
+
+    //without concatenation
     function createCards() {
       let cardsHTML = '';
       for (let i = 0; i < cardData.length; i++) {  
