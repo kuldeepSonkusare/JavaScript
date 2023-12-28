@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tableContainer"></div>
+
+    <!--
+        DOM - Document Object Model
+    -->
+
+    <script>
+        function createTable() {
+  // TABLE DATA
+  const tableData = [
+    { name: 'MANOJ', age: 25, city: 'Bangalore', Job: 'Tech Lead', CTC: '25LPA' },
+    { name: 'CHAVEEN', age: 24, city: 'ORISSA', Job: 'INTERN', CTC: '3LPA' },
+    { name: 'BHANU', age: 21, city: 'ANDHRA', Job: 'STUDENT', CTC: '8LPA' },
+    { name: 'SUSHMITHA', age: 20, city: 'KARNATAKA', Job: 'MANAGER', CTC: '30LPA' },
+    { name: 'LAKSHMI', age: 20, city: 'KARNATAKA', Job: 'MANAGER', CTC: '30LPA' }
+  ];
+
+  // creation of table
+  let table = '<table border="1">';
+  table += '<tr>';
+  table += '<th>NAME</th>';
+  table += '<th>AGE</th>';
+  table += '<th>CITY</th>';
+  table += '<th>JOB</th>';
+  table += '<th>CTC</th>';
+  table += '</tr>';
+
+  for (let i = 0; i < tableData.length; i++) {
+    table += '<tr>';
+    table += '<td>' + tableData[i].name + '</td>';
+    table += '<td>' + tableData[i].age + '</td>';
+    table += '<td>' + tableData[i].city + '</td>';
+    table += '<td>' + tableData[i].Job + '</td>';
+    table += '<td>' + tableData[i].CTC + '</td>';
+    table += '</tr>';
+  }
+
+  table += '</table>';
+  return table;
+}
+
+document.getElementById('tableContainer').innerHTML = createTable();
+
+
+
+
+    </script>
+</body>
+</html>
