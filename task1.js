@@ -68,3 +68,22 @@ In summary:
 // Use for...of when iterating over iterable objects.
 // Use forEach when you want to perform an operation on each element of an array.
 // Use map when you want to create a new array based on the original array's elements.
+
+
+// 2. Diif btw ES5 (ECMAScript 5) and ES6 (ECMAScript 2015, also known as ES2015)
+// ES5 (ECMAScript 5) and ES6 (ECMAScript 2015, also known as ES2015) are different versions of the ECMAScript standard, which is the specification that JavaScript is based on. ES6 introduced several new features and improvements over ES5. Here are some key differences:
+
+
+// 2 .What is a prototype in JavaScript?
+// Prototype in JavaScript
+// The prototype is an object that is associated with every functions and objects by default in JavaScript, where function's prototype property is accessible and modifiable and object's prototype property (aka attribute) is not visible. Every function includes prototype object by default.
+
+
+// 3. What are call ,bind, apply
+// call, bind, and apply are methods in JavaScript that are used to manipulate the this context of a function and, in the case of call and apply, to invoke a function with a specific this value. Here's a brief explanation of each:
+
+// call and apply are used to invoke a function immediately with a specified this value and arguments.
+  
+// bind is used to create a new function with a specified this value and initial arguments but does not invoke the function immediately. The returned function can be invoked later.
+  
+// These methods are commonly used in scenarios where you need to control the execution context of a function or partially apply arguments to a function.
