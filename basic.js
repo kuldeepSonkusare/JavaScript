@@ -21,7 +21,7 @@ for (let key in obj) {
   console.log(key, obj[key]);
 }
 
-for...of loop:
+//for...of loop:
 
 // Introduced in ES6, it iterates over iterable objects (arrays, strings, maps, sets, etc.).
 // Provides a simpler syntax compared to traditional for loops.
@@ -40,7 +40,7 @@ for (const element of arr) {
 // It's a method of the Array object.
 
 // example:
-const arr = [1, 2, 3];
+//const arr = [1, 2, 3];
 
 arr.forEach(function (element) {
   console.log(element);
@@ -53,7 +53,7 @@ arr.forEach(function (element) {
 // Returns a new array with the results.
 
 // example:
-const arr = [1, 2, 3];
+//const arr = [1, 2, 3];
 
 const mappedArray = arr.map(function (element) {
   return element * 2;
@@ -61,7 +61,7 @@ const mappedArray = arr.map(function (element) {
 
 console.log(mappedArray);
 
-In summary:
+//In summary:
 
 // Use for when you know the exact number of iterations.
 // Use for...in when iterating over object properties.
